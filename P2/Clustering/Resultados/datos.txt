@@ -1,0 +1,37 @@
+January      1700
+February     1544
+March        1613
+April        1593
+May          1660
+June         1802
+July         1964
+August       1699
+September    1746
+October      1811
+November     1681
+December     1568
+Name: HORA, dtype: int64
+lunes        3075
+martes       3150
+miércoles    3180
+jueves       3106
+viernes      3197
+sábado       2603
+domingo      2070
+Name: HORA, dtype: int64
+Buen Tiempo Kmeans silhouette: 0.896440
+Buen Tiempo Kmeans calinsky: 13139.955811
+Buen Tiempo Ward silhouette: 0.885166
+Buen TIempo Ward calinsky: 11493.529293
+Viento fuerte Kmeans silhouette: 0.905902
+Viento fuerte Kmeans calinsky: 426.321191
+Viento Fuerte Ward silhouette: 0.905902
+Viento Fuerte Ward calinsky: 426.321191
+Andalucia Kmeans silhouette: 0.826886
+Andalucia Kmeans calinsky: 3753.056480
+Andalucia Ward silhouette: 0.857331
+Andalucia Ward calinsky: 3893.887200
+Madrid Kmeans silhouette: 0.830770
+Madrid Kmeans calinsky: 1545.969752
+Madrid Ward silhouette: 0.867773
+Madrid Ward calinsky: 1625.126745
