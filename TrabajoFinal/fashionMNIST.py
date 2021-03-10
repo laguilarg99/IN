@@ -42,7 +42,7 @@ plt.figure()
 plt.imshow(train_images[0])
 plt.colorbar()
 plt.grid(False)
-plt.savefig('ropa1.jpg')
+plt.savefig('ropa1.png')
 
 
 plt.figure(figsize=(10,10))
@@ -53,7 +53,7 @@ for i in range(25):
     plt.grid(False)
     plt.imshow(train_images[i], cmap=plt.cm.binary)
     plt.xlabel(class_names[train_labels[i]])
-plt.savefig('conjuntoropa.jpg')
+plt.savefig('conjuntoropa.png')
 
 #Mostrar cuantos datos hay de cada conjunto
 plt.figure()
@@ -61,7 +61,7 @@ unique, counts = np.unique(train_labels, return_counts=True)
 sns.barplot(x = unique, y = counts)
 plt.ylabel('Digit Frequency')
 plt.xlabel('Digit')
-plt.savefig('labels.jpg')
+plt.savefig('labels.png')
 
 #----------------------------------------------------------------------------------------------------------------------------
 #Procesado de imágenes para Machine Learning
@@ -150,7 +150,7 @@ plt.xlabel("Num of Epochs")
 plt.ylabel("Accuracy")  
 plt.title("Training Accuracy vs Validation Accuracy")  
 plt.legend(['train','validation'])
-plt.savefig('InceptionV3_accuracy.jpg')
+plt.savefig('InceptionV3_accuracy.png')
 
 plt.figure()  
 plt.plot(history.history['loss'],'r')  
@@ -161,7 +161,7 @@ plt.xlabel("Num of Epochs")
 plt.ylabel("Loss")  
 plt.title("Training Loss vs Validation Loss")  
 plt.legend(['train','validation'])
-plt.savefig('InceptionV3_loss.jpg')  
+plt.savefig('InceptionV3_loss.png')  
 
 
 #----------------------------------------------------------------------------------------------------------------------------
@@ -244,7 +244,7 @@ for train, test in kfold.split(inputs, targets):
   plt.ylabel("Accuracy")  
   plt.title("Training Accuracy vs Validation Accuracy")  
   plt.legend(['train','validation'])
-  plt.savefig('Secuencial_accuracy{}.jpg'.format(fold_no))  
+  plt.savefig('Secuencial_accuracy{}.png'.format(fold_no))  
 
   plt.figure()  
   plt.plot(Secuencial_model.history['loss'],'r')  
@@ -255,7 +255,7 @@ for train, test in kfold.split(inputs, targets):
   plt.ylabel("Loss")  
   plt.title("Training Loss vs Validation Loss")  
   plt.legend(['train','validation'])
-  plt.savefig('Secuencial_loss{}.jpg'.format(fold_no))  
+  plt.savefig('Secuencial_loss{}.png'.format(fold_no))  
 
   fold_no = fold_no + 1
 
